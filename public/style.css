@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#webcam-container {
+    margin: 20px;
+}
+
+#label-container {
+    margin-top: 20px;
+}
+
+#prediction-result {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
