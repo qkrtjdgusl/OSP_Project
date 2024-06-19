@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teachable Machine Image Model</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  </head>
+  <body>
+    <div>Teachable Machine Image Model</div>
+
+    <div class="file-upload">
+      <button
+        class="file-upload-btn"
+        type="button"
+        onclick="$('.file-upload-input').trigger('click')"
+      >
+        이미지 추가
+      </button>
+      <div class="image-upload-wrap">
+        <input
+          class="file-upload-input"
+          type="file"
+          onchange="loadImageToCanvas(this);"
+          accept="image/*"
+        />
+        <div class="drag-text">
+          <h3>이미지를 드래그하거나 클릭하여 선택하세요</h3>
+        </div>
+      </div>
+      <div class="file-upload-content" style="display: none">
+        <img
+          class="file-upload-image"
+          id="uploaded-image"
+          src="#"
+          alt="your image"
+        />
+        <div class="image-title-wrap">
+          <button type="button" onclick="removeUpload()" class="remove-image">
+            이미지 제거
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <canvas id="uploadCanvas" style="display: none"></canvas>
+
+    <div id="progress-container" class="progress-container" style="display: none;">
+      <div class="bar-wrapper">
+        <div class="label">Autistic</div>
+        <div class="progress-bar">
+          <div id="autistic-bar" class="progress-bar-inner autistic">
+            <span class="percentage">0%</span>
+          </div>
+        </div>
+      </div>
+      <div class="bar-wrapper">
+        <div class="label">Non-Autistic</div>
+        <div class="progress-bar">
+          <div id="non-autistic-bar" class="progress-bar-inner non-autistic">
+            <span class="percentage">0%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="prediction-result"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
