@@ -14,8 +14,8 @@
     <button type="button" onclick="initWebcam()">웹캠 시작</button>
     <button type="button" onclick="stopWebcam()">웹캠 중지</button>
     <div id="webcam-container"></div>
-    <div id="label-container"></div>
-    <div id="prediction-result"></div>
+    <div id="label-container-webcam"></div>
+    <div id="prediction-result-webcam"></div>
 
     <div class="file-upload">
       <button
@@ -54,11 +54,11 @@
     <button type="button" onclick="predictImage()">예측</button>
     <canvas id="uploadCanvas" style="display: none"></canvas>
 
-    <div id="progress-container" class="progress-container">
+    <div id="progress-container-webcam" class="progress-container">
       <div class="bar-wrapper">
         <div class="label">Autistic</div>
         <div class="progress-bar">
-          <div id="autistic-bar" class="progress-bar-inner autistic">
+          <div id="autistic-bar-webcam" class="progress-bar-inner autistic">
             <span class="percentage">0%</span>
           </div>
         </div>
@@ -66,12 +66,39 @@
       <div class="bar-wrapper">
         <div class="label">Non-Autistic</div>
         <div class="progress-bar">
-          <div id="non-autistic-bar" class="progress-bar-inner non-autistic">
+          <div
+            id="non-autistic-bar-webcam"
+            class="progress-bar-inner non-autistic"
+          >
             <span class="percentage">0%</span>
           </div>
         </div>
       </div>
     </div>
+
+    <div id="progress-container-image" class="progress-container">
+      <div class="bar-wrapper">
+        <div class="label">Autistic</div>
+        <div class="progress-bar">
+          <div id="autistic-bar-image" class="progress-bar-inner autistic">
+            <span class="percentage">0%</span>
+          </div>
+        </div>
+      </div>
+      <div class="bar-wrapper">
+        <div class="label">Non-Autistic</div>
+        <div class="progress-bar">
+          <div
+            id="non-autistic-bar-image"
+            class="progress-bar-inner non-autistic"
+          >
+            <span class="percentage">0%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="prediction-result-image"></div>
 
     <script src="script.js"></script>
   </body>
