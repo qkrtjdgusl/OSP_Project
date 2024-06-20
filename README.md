@@ -6,11 +6,15 @@
 
 ## Table of Contents
 
-- [기획의도](#project intent)
+- [기획의도](#project-intent)
 - [기능](#Features-기능)
 - [기술스택](#tech-stack)
 - [팀원](#팀원)
 - [오픈소스](#opensource)
+
+## project intent
+
+Teaching Machine 을 활용하여 자폐 스펙트럼 장애(ASD)의 조기 발견과 이해를 돕기 위한 종합 도구를 제공하고자 합니다. 이 프로젝트는 "아동'을 대상으로 합니다. 조기 진단의 중요성을 인식하여 ASD로 영향을 받는 사람들의 삶의 질을 향상시키는 것을 목표로 합니다.
 
 ## Features
 
@@ -27,9 +31,6 @@
     <tr>
       <td width="60">
         <div align="center"><a href="https://nodejs.org" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png" alt="Node.js Logo" width="50" height="50"/></a><br>Node.js</br></div>
-      </td>
-      <td width="60">
-        <div align="center"><a href="https://reactjs.org" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React.js Logo" width="50" height="50"/></a><br>React.js</br></div>
       </td>
       <td width="60">
         <div align="center"><img src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5 Logo" width="50" height="50"/><br>HTML5</br></div>
