@@ -1,0 +1,115 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  flex: 1;
+}
+
+.instructions {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #007bff;
+  font-weight: bold;
+  font-family: 'Orbit', cursive;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#webcam-container {
+  margin: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 100%;
+  text-align: center;
+}
+
+#progress-container-webcam {
+  width: 400px;
+  text-align: left;
+  margin-top: 20px;
+  display: none;
+}
+
+.bar-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.label {
+  width: 100px;
+  text-align: right;
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  flex: 1;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 30px;
+  display: flex;
+  align-items: left;
+  position: relative;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  text-align: left;
+  padding-left: 10px;
+  line-height: 30px;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: width 0.5s ease;
+  font-size: 16px;
+}
+
+.autistic {
+  background-color: #ff4c4c;
+}
+
+.non-autistic {
+  background-color: #28a745;
+}
+
+.percentage {
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#prediction-result-webcam {
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Orbit', cursive;
+  font-weight: bold;
+}
