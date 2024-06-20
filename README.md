@@ -14,7 +14,7 @@
 
 ## project intent
 
-Teaching Machine 을 활용하여 자폐 스펙트럼 장애(ASD)의 조기 발견과 이해를 돕기 위한 종합 도구를 제공하고자 합니다. 이 프로젝트는 "아동'을 대상으로 합니다. 조기 진단의 중요성을 인식하여 ASD로 영향을 받는 사람들의 삶의 질을 향상시키는 것을 목표로 합니다.
+Teachable Machine 을 활용하여 자폐 스펙트럼 장애(ASD)의 조기 발견과 이해를 돕기 위한 종합 도구를 제공하고자 합니다. 이 프로젝트는 "아동'을 대상으로 합니다. 조기 진단의 중요성을 인식하여 ASD로 영향을 받는 사람들의 삶의 질을 향상시키는 것을 목표로 합니다.
 
 ## Features
 
@@ -62,5 +62,5 @@ Teaching Machine 을 활용하여 자폐 스펙트럼 장애(ASD)의 조기 발�
 
 ## opensource
 
-- Google 의 TeachingMachine 을 활용한 모델을 생성했습니다. https://github.com/googlecreativelab/teachablemachine-community
+- Google 의 TeachableMachine 을 활용한 모델을 생성했습니다. https://github.com/googlecreativelab/teachablemachine-community
 - 학습데이터로 Kaggle-Autism 의 dataset 을 활용했습니다. https://github.com/mm909/Kaggle-Autism
