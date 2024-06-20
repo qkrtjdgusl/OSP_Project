@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Self Check</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="self_check.css">
+  <link rel="stylesheet" href="../main/main_style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Do+Hyeon&family=Gamja+Flower&family=Orbit&display=swap" rel="stylesheet">
+  <style>
+    #result-container {
+      text-align: center;
+      padding: 20px;
+      margin: 70px auto;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      height: 600px;
+    }
+
+    #result {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #333;
+      text-decoration: underline;
+    }
+
+    h2 {
+      font-family: 'Do Hyeon', sans-serif;
+      color: #314dca;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-family: 'Orbit', cursive;
+      color: #555;
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="header">
+  <h1 class="custom-font">AUTISM SPECTRUM DIAGNOSIS</h1>
+</div>
+
+<nav class="navbar navbar-expand-sm">
+  <ul class="navbar-nav mx-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="../main/main.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../image_test/image_test.html">Image Test</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="self_check.html">Self Check</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../mypage/mypage.html">My Page</a>
+    </li>
+  </ul>
+  <a class="btn btn-primary" href="../login/login.html">Login</a>
+</nav>
+
+<div class="container" id="result-container">
+  <h2>자가진단 결과</h2>
+  <p id="result"></p>
+  <h3>진단 결과는 단순한 테스트의 결과일 뿐입니다.<br>
+    그러나 합리적으로 의심된다면 병원으로 내원해<br/> 진료를 받아보시는 것을 추천드립니다.</h3>
+</div>
+
+<div class="footer">
+  <p>웃음마을 행복구 123번지 농담곰의 미소집 3층<br>
+    010-0069-9290 nongdam@dangom.com<br>
+    Copyright(C)Damgom. All right reserved.</p>
+</div>
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const score = urlParams.get('score');
+  
+  let resultText;
+  if (score < 40) {
+    resultText = "결과: 자폐스펙트럼의 가능성이 낮습니다.";
+  } else if (score < 50) {
+    resultText = "결과: 자폐스펙트럼의 가능성이 있을 수 있습니다.";
+  } else {
+    resultText = "결과: 자폐스펙트럼의 가능성이 높습니다.";
+  }
+
+  document.getElementById('result').innerText = resultText;
+</script>
+</body>
+</html>
